@@ -10,6 +10,7 @@ import {
 import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import logo from "../assets/53283953.png";
 
 function NotFoundComponent() {
   return (
@@ -87,7 +88,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      {
+        rel: "icon",
+        href: logo,
+        type: "image/png",
+        sizes: "180x180",
+      },
       {
         rel: "preconnect",
         href: "https://fonts.googleapis.com",
